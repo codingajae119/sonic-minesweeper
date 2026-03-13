@@ -13,14 +13,11 @@ export function KofiFooter() {
         style={{
           display: 'inline-flex',
           alignItems: 'center',
-          gap: 8,
-          padding: '7px 16px',
-          backgroundColor: '#29abe0',
-          color: '#fff',
-          borderRadius: 8,
+          gap: 6,
+          color: '#64748b',
           textDecoration: 'none',
+          fontSize: '1em',
           fontWeight: 'bold',
-          fontSize: '0.9em',
         }}
       >
         ☕ Buy me a coffee
