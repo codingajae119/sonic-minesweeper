@@ -7,6 +7,7 @@ import { Header } from './components/Header/Header'
 import { Board } from './components/Board/Board'
 import { BottomBar } from './components/BottomBar/BottomBar'
 import { ResultModal } from './components/ResultModal/ResultModal'
+import { KofiFooter } from './components/KofiFooter/KofiFooter'
 
 function GameApp() {
   const { state, dispatch } = useGame()
@@ -41,6 +42,7 @@ function GameApp() {
       {state.difficulty && (
         <BottomBar difficulty={state.difficulty} phase={state.phase} dispatch={dispatch} />
       )}
+      <KofiFooter />
       {(state.phase === 'win' || state.phase === 'game-over') && (
         <ResultModal state={state} dispatch={dispatch} />
       )}

@@ -4,6 +4,7 @@ import type { Difficulty, GameAction } from '../../types'
 import { generateBoard } from '../../domain/BoardGenerator'
 import { AudioService } from '../../infrastructure/AudioService'
 import { getEarphoneShown, setEarphoneShown } from '../../infrastructure/StorageService'
+import { KofiFooter } from '../KofiFooter/KofiFooter'
 
 interface StartScreenProps {
   dispatch: React.Dispatch<GameAction>
@@ -104,6 +105,7 @@ export function StartScreen({ dispatch, audioSupported }: StartScreenProps) {
           ),
         )}
       </div>
+      <KofiFooter />
     </div>
   )
 }
